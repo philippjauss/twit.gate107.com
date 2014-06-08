@@ -117,7 +117,17 @@ class Twit {
      * @return string $imageFileName
      */
     function createThumbnail($showname,$videourl){
-            $ffmpeg ='C:\Programme\ffmpeg\bin\ffmpeg';
+            switch (getHostName()){
+                case "Andromeda":
+                    // Programm Path for Windows
+                    $ffmpeg ='C:\Programme\ffmpeg\bin\ffmpeg';
+                    break;
+                default:
+                    // Defaults to Linux path
+                    $ffmpeg ='/usr/bin/ffmpeg';
+                    break;
+                }
+            
             if (strpos($showname,":")=== false){
                 $imagefile = str_replace(' ','',$showname);
                 $imagefile = str_replace('.','',$imagefile) . ".jpg";                
