@@ -1,0 +1,141 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.06.2014, 11:36:47
+    Author     : Philipp
+*/
+
+
+#videocontainer { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+#videoplayer { 
+    position: absolute; 
+    width: 100%;
+}
+
+#videopage {
+    padding:0;
+    margin:0;
+    background-color: black;
+}
+
+body {
+    background-color: #008cba;
+    
+}
+
+a, a:hover{
+    color: black;
+}
+
+.row { 
+    max-width: 100%; 
+}
+
+.showtile {
+    min-height: 16.01em;
+    max-height: 16.01em;
+    overflow:hidden;
+    float: left;
+    //padding: 1em;
+    margin: 0.5em;
+    //border: solid;
+    //border-width: 1px;
+    //border-color: steelblue;
+    background-color: #003366;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    color: white;
+    position: relative;
+    
+    
+}
+
+.showtile p {
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.showtitletext {
+
+    bottom: 0;
+    width: 100%;
+    background-color: #003366;
+}
+
+.showtile h2 {
+    padding: 0.5em;
+    margin-top: 0em;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+@media only screen and (max-width: 40em) { 
+    .showtile {
+        width: 100%;
+        margin: 0px;
+    }
+    .showtitletext {
+        position: absolute;
+    }
+    .small-12 {
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 40.063em) {
+    body {
+           padding-left: 8%;
+    }    
+    .showtile {
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 64.063em) { 
+    body {
+           padding-left: 8%;
+    }    
+    .showtile {
+        width: 21%;
+    }
+}
+
+@media only screen and (min-width: 90.063em) { 
+    
+    body {
+           padding-left: 7.5%;
+    }
+    .showtile {
+        width: 17%;
+    }
+
+}
+
+@media only screen and (min-width: 120.063em) { 
+    body {
+           padding-left: 7.5%;
+    }    
+    .showtile {
+        border: solid;
+        border-color: brown;
+        width: 9%;
+
+    }
+} 

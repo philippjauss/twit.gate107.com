@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Twit | twit.gate107.com</title>
+
+	<script type="text/javascript" src="resources/combined.js?2780970235"></script>
+	<script type="text/javascript" src="elementlist.js?468952722"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Show.html">Show</a></li>
+				<li class="active"><a href="class-Twit.html">Twit</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Twit</h1>
+
+
+	<div class="description">
+	
+<p>Create an array of Show objects</p>
+
+<p>This class creates the array of the latest twit shows and returns the
+array.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				Philipp<br />
+		<b>Located at</b> <a href="source-class-Twit.html#13-154" title="Go to source code">Twit.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Twit.html#57-60" title="Go to source code">__construct</a>( <span>mixed <var>$feedurl</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cleanup" id="_cleanup">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cleanup">#</a>
+		<code><a href="source-class-Twit.html#62-85" title="Go to source code">cleanup</a>( )</code>
+
+		<div class="description short">
+			
+<p>Delete old thumbnails, otherwise we run out of filespace sooner or later</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete old thumbnails, otherwise we run out of filespace sooner or later</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-Twit.html#87-109" title="Go to source code">parse</a>( )</code>
+
+		<div class="description short">
+			
+<p>Parse the feed xml file and creates the array of shows and the thumbnails</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse the feed xml file and creates the array of shows and the thumbnails</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createThumbnail" id="_createThumbnail">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createThumbnail">#</a>
+		<code><a href="source-class-Twit.html#111-141" title="Go to source code">createThumbnail</a>( <span>string <var>$showname</var></span>, <span>string <var>$videourl</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates the imagefilename based on the showname if it doesn't exist yet and
+returns the thumbnail name inclusive directory</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates the imagefilename based on the showname if it doesn't exist yet and
+returns the thumbnail name inclusive directory</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$showname</var></dt>
+					<dd><code>string</code><br>$showname the name of the show</dd>
+					<dt><var>$videourl</var></dt>
+					<dd><code>string</code><br>$videourl the url for the video</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>$imageFileName<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getShows" id="_getShows">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Show.html">Show</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getShows">#</a>
+		<code><a href="source-class-Twit.html#143-153" title="Go to source code">getShows</a>( )</code>
+
+		<div class="description short">
+			
+<p>Delete old thumbnails, parse the feedxml and deliver the shows-array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete old thumbnails, parse the feedxml and deliver the shows-array</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Show.html">Show</a>[]</code></code><br>array with Show objects<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		twit.gate107.com API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
