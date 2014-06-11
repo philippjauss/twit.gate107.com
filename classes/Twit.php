@@ -122,6 +122,10 @@ class Twit {
                     // Programm Path for Windows
                     $ffmpeg ='C:\Programme\ffmpeg\bin\ffmpeg';
                     break;
+                case "saturn":
+                    // Programm Path for Windows
+                    $ffmpeg ='/usr/bin/avconv';
+                    break;
                 default:
                     // Defaults to Linux path
                     $ffmpeg ='/usr/bin/ffmpeg';
