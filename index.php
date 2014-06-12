@@ -34,7 +34,7 @@
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
         <li><a href="index.php">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.php">About</a></li>
       </ul>
     </aside>
 
