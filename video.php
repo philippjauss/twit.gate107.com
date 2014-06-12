@@ -16,7 +16,7 @@
 
 </head>
 <body id="videopage">
-<?php include_once("analyticstracking.php") ?>    
+<?php include_once("analyticstracking.php"); ?>    
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
     <nav class="tab-bar">
