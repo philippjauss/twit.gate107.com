@@ -117,18 +117,22 @@ class Twit {
      * @return string $imageFileName
      */
     function createThumbnail($showname,$videourl){
+            
             switch (getHostName()){
                 case "Andromeda":
                     // Programm Path for Windows
                     $ffmpeg ='C:\Programme\ffmpeg\bin\ffmpeg';
+                    $jpegoptim = 'C:\Programme\jpegoptim\jpegoptim';
                     break;
                 case "saturn":
-                    // Programm Path for Windows
+                    // Programm Path for Linux
                     $ffmpeg ='/usr/bin/avconv';
+                    $jpegoptim = '/usr/bin/jpegoptim';
                     break;
                 default:
                     // Defaults to Linux path
                     $ffmpeg ='/usr/bin/ffmpeg';
+                    $jpegoptim = '/usr/bin/jpegoptim';
                     break;
                 }
             
@@ -146,9 +150,12 @@ class Twit {
             if (file_exists($thumbnail)) {
                 // If the thumbnail already exists, we don't create a new one
             }else {
-                $cmd = "$ffmpeg -ss 00:02:30 -i $videourl  -vframes 1 -s 640x360 $thumbnail 2>&1";
-                //echo "cmd: $cmd \n";
+                $cmd = "$ffmpeg -ss 00:02:30 -i $videourl  -vframes 1 -s 640x360 $thumbnail 2>&1";          
                 error_log(exec($cmd));
+                // Optimize jpeg according to googles pagespeed insights
+                $cmd = "$jpegoptim $thumbnail --strip-all";
+                error_log(exec($cmd));
+                
                 
             }
             return $thumbnail;
