@@ -38,6 +38,8 @@
       <ul class="off-canvas-list">
         <li><a href="index.php">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <hr>
+        <li><a href="http://www.twit.tv" target="_blank">TWiT.tv</a></li>        
       </ul>
     </aside>
 
@@ -49,8 +51,16 @@
             <div class="small-12 large-12 columns">
                 <h1>About</h1>
                 <p>Da ich nicht für jedes Gerät eine App installieren wollte, 
-                    nur um die aktuellsten TWiT-Shows anschauen zu können, habe ich mir eine einfache Übersicht erstellt. 
+                    nur um die aktuellsten TWiT-Shows anschauen zu können, habe ich mir eine einfache Übersicht erstellt
+                    und kann damit die letzten Folgen schauen, egal welches Gerät ich benutze. Und mit Googles Chrome auch gleich
+                    aus dem Browser heraus an den Chromecast streamen.
+                    
                     Als Datenquelle benutze ich den offiziellen TWiT-RSS-Feed. </p>
+                <hr>
+                <p> Sick and tired of installing an app on every platform just to watch the latest twit shows, I made a 
+                    simple overview to watch them no matter what device I use. And with the latest Chrome (on Android) I can even 
+                    stream it to my chromecast.
+                    Datasource is the official TWiT-RSS-Feed.
 
 
             </div>

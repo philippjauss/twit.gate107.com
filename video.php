@@ -34,6 +34,8 @@
       <ul class="off-canvas-list">
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
+        <hr>
+        <li><a href="http://www.twit.tv" target="_blank">TWiT.tv</a></li> 
       </ul>
     </aside>
 
