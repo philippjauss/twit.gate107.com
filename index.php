@@ -2,20 +2,17 @@
 
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 
-<html class="no-js" lang="en" >
+<html class="no-js" lang="de" >
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latest TWiT Shows</title>
 
-  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="customcss/styles.css">
   <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300' rel='stylesheet' type='text/css'>
-
-
   <script src="js/vendor/modernizr.js"></script>
 
 </head>

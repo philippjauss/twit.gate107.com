@@ -10,8 +10,6 @@ and open the template in the editor.
 
 
 #videocontainer { 
-    position: absolute; 
-    width: 100%; 
     height: 100%; 
     overflow: hidden; 
 }
@@ -22,9 +20,17 @@ and open the template in the editor.
 }
 
 #videopage {
-    padding:0;
-    margin:0;
+    padding: 0px;
+    margin: 0px;
     background-color: black;
+}
+
+#videopage .small-12, #videopage .large-12 {
+    padding: 0px;
+}
+
+#videopage .main-section {
+    padding-left: 0px;
 }
 
 body {
