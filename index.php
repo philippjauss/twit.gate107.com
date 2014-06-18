@@ -7,6 +7,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="/img/twitlogo.jpg">  
   <title>Latest TWiT Shows</title>
 
   <link rel="stylesheet" href="css/normalize.css">
