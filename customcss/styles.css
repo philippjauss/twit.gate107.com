@@ -113,6 +113,10 @@ p, h1 {
     color: white;
 }
 
+.title a {
+    color: white;
+}
+
 
 @media only screen and (max-width: 40em) { 
     .showtile {
