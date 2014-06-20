@@ -6,6 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="/img/twit-192x192.png">  
   
   <title>Twit</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -25,7 +27,7 @@
       </section>
 
       <section class="middle tab-bar-section">
-        <h1 class="title">Latest TWiT Shows</h1>
+        <h1 class="title"><a href="http://www.twit.gate107.com">latest TWiT shows</a></h1>
       </section>
 
     </nav>
