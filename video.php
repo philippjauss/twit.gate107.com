@@ -36,13 +36,12 @@
       <ul class="off-canvas-list">
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
-        <hr>
         <li><a href="http://www.twit.tv" target="_blank">TWiT.tv</a></li> 
       </ul>
     </aside>
 
 
-    <section class="main-section"> 
+    <section class="main-video-section"> 
         <div class="row">
             <div class="small-12 large-12 columns">        
     <div id="videocontainer">

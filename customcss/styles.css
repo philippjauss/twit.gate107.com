@@ -8,6 +8,13 @@ and open the template in the editor.
     Author     : Philipp
 */
 
+p,
+h1,
+h2,
+a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 #videocontainer { 
     height: 100%; 
     overflow: hidden; 
@@ -24,11 +31,13 @@ and open the template in the editor.
     background-color: black;
 }
 
-#videopage .small-12, #videopage .large-12 {
+#videopage .small-12, 
+#videopage .large-12 {
     padding: 0px;
 }
 
-#videopage .main-section {
+#videopage .main-video-section {
+    margin-top: 0px;
     padding-left: 0px;
 }
 
@@ -38,9 +47,9 @@ body {
     
 }
 
-a, a:hover{
+/*a, a:hover{
     color: black;
-}
+}*/
 
 .row { 
     max-width: 100%; 
@@ -51,15 +60,10 @@ a, a:hover{
     max-height: 16.01em;
     overflow:hidden;
     float: left;
-    //padding: 1em;
     margin: 0.5em;
-    //border: solid;
-    //border-width: 1px;
-    //border-color: steelblue;
     background-color: #003366;
     background-size: 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
     color: white;
     position: relative;
     
@@ -73,11 +77,9 @@ a, a:hover{
     text-overflow: ellipsis;
     text-decoration: none;
     font-size: 1em;
-    font-family: 'Fira Sans', sans-serif;
 }
 
 .showtitletext {
-
     bottom: 0;
     width: 100%;
     background-color: #003366;
@@ -88,18 +90,56 @@ a, a:hover{
     margin-top: 0em;
     color: white;
     font-size: 1.3em;
-    font-family: 'Fira Sans', sans-serif;
-    
 }
+
+
 
 .tab-bar {
     background: #003366;
+    height: 60px;
 }
+.left-small {
+    width: 60px;
+    height: 60px;
+}
+
+.tab-bar .menu-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.tab-bar .menu-icon span:after {
+    left: 1.2rem;
+}
+
+.tab-bar-section {
+    text-align: left;
+}
+
+.tab-bar-section.middle {
+    left: 60px;
+    top: 9px;
+}
+
+.tab-bar h1 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.tab-bar h1 a {
+    display: block;
+}
+
 
 .off-canvas-wrap {
     height: 100%;
     overflow-y: auto;
 } 
+
+.off-canvas-list a {
+    font-size: 1.4em;
+    font-weight: normal;
+}
 .inner-wrap {
     min-height: 100%; 
 }
@@ -108,13 +148,13 @@ a, a:hover{
     background: #003366;
 }
 
-p, h1 {
+p,
+h1,
+.title a{
     color: white;
 }
 
-.title a {
-    color: white;
-}
+
 
 #siteloader {
     position: absolute;
@@ -124,6 +164,13 @@ p, h1 {
     margin:-100px 0 0 -100px;
     text-align: center;
 }
+
+.main-section,
+.main-video-section {
+    margin-top: 40px;
+}
+
+
 /* http://signalvnoise.com/posts/2577-loading-spinner-animation-using-css-and-webkit */
 /* start basic spinner styles*/
 
@@ -280,10 +327,17 @@ div.spinner div.bar12 {
     .small-12 {
         padding: 0px;
     }
+    .tab-bar h1 {
+        font-size: 1.4em;
+
+    }
+    .main-video-section {
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 40.063em) {
-    .main-section {
+    .main-video-section {
         padding-left: 8%;
     }    
     .showtile {
@@ -292,7 +346,7 @@ div.spinner div.bar12 {
 }
 
 @media only screen and (min-width: 64.063em) { 
-    .main-section {
+    .main-video-section {
         padding-left: 8%;
     }    
     .showtile {
@@ -301,7 +355,7 @@ div.spinner div.bar12 {
 }
 
 @media only screen and (min-width: 90.063em) { 
-    .main-section {
+    .main-video-section {
         padding-left: 7.5%;
     }    
     .showtile {
@@ -311,13 +365,12 @@ div.spinner div.bar12 {
 }
 
 @media only screen and (min-width: 120.063em) { 
-    .main-section {
-            padding-left: 7.5%;
+    .main-video-section {
+        padding-left: 7.5%;
     }        
     .showtile {
         border: solid;
         border-color: brown;
         width: 9%;
-
     }
 } 

@@ -40,7 +40,6 @@
       <ul class="off-canvas-list">
         <li><a href="index.php">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <hr>
         <li><a href="http://www.twit.tv" target="_blank">TWiT.tv</a></li>        
       </ul>
     </aside>
@@ -50,7 +49,7 @@
         <!-- main content -->
 
         <div class="row">
-            <div class="small-12 large-12 columns">
+            <div class="small-12 large-6 columns large-offset-3 columns">
                 <h1>About</h1>
                 <p>Da ich nicht für jedes Gerät eine App installieren wollte, 
                     nur um die aktuellsten TWiT-Shows anschauen zu können, habe ich mir eine einfache Übersicht erstellt
