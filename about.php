@@ -77,6 +77,9 @@
   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+        $('a.left-off-canvas-toggle').click(function() {
+    $('.inner-wrap').css('min-height', $(window).height() + 'px');
+    });
   </script>
 </body>
 </html>

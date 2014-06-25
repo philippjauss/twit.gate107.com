@@ -21,7 +21,7 @@ a {
 }
 
 #videoplayer { 
-    position: absolute; 
+    //position: absolute; 
     width: 100%;
 }
 
@@ -132,8 +132,8 @@ body {
 
 
 .off-canvas-wrap {
-    height: 100%;
-    overflow-y: auto;
+    //height: 100%;
+    //overflow-y: auto;
 } 
 
 .off-canvas-list a {
@@ -157,11 +157,11 @@ h1,
 
 
 #siteloader {
-    position: absolute;
+    //position: absolute;
     left: 50%;
-    top: 50%;
-    z-index: 1;
-    margin:-100px 0 0 -100px;
+    //top: 50%;
+    z-index: 10;
+    margin:40px 0 0 0;
     text-align: center;
 }
 

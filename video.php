@@ -69,7 +69,6 @@
     $(document).ready(function(){
        setVideosize(); 
     });
-
     
     $( window ).resize(function() {
        setVideosize();

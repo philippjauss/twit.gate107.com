@@ -41,9 +41,6 @@
       </ul>
     </aside>
 
-
-    <section class="main-video-section">
-        
         <!-- show loading animation -->
         <div id="siteloader">
               <div class="spinner">
@@ -62,6 +59,9 @@
               </div>
             <p>Loading...</p>
         </div>
+    <section class="main-video-section">
+        
+
         
         <!-- main content -->
         <div class="row">
@@ -81,6 +81,9 @@
   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+        $('a.left-off-canvas-toggle').click(function() {
+    $('.inner-wrap').css('min-height', $(window).height() + 'px');
+    });
     $.ajax({    //create an ajax request to load_page.php
         type: "GET",
         url: "ajaxload.php",             
