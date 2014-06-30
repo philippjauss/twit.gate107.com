@@ -61,7 +61,7 @@
                 <p> Sick and tired of installing an app on every platform just to watch the latest twit shows, I made a 
                     simple overview to watch them no matter what device I use. And with the latest Chrome (on Android) I can even 
                     stream it to my chromecast.
-                    Datasource is the official TWiT-RSS-Feed.
+                    Datasource is the official TWiT-RSS-Feed.</p>
 
 
             </div>
