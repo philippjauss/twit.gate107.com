@@ -103,6 +103,11 @@ body {
     height: 60px;
 }
 
+.right-small {
+    width: 60px;
+    height: 60px;
+}
+
 .tab-bar .menu-icon {
     width: 60px;
     height: 60px;

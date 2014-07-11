@@ -30,6 +30,12 @@
       <section class="middle tab-bar-section">
           <h1 class="title"><a href="http://www.twit.gate107.com">latest TWiT shows</a></h1>
       </section>
+        <section class="right-small">
+        <div id="reload">
+            <img src="img/reload.png" alt="reload page">
+        </div>            
+        </section>
+
 
     </nav>
 
@@ -81,18 +87,33 @@
   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
-        $('a.left-off-canvas-toggle').click(function() {
-    $('.inner-wrap').css('min-height', $(window).height() + 'px');
+    $('a.left-off-canvas-toggle').click(function() {
+        $('.inner-wrap').css('min-height', $(window).height() + 'px');
     });
-    $.ajax({    //create an ajax request to load_page.php
-        type: "GET",
-        url: "ajaxload.php",             
-        dataType: "html",   //expect html to be returned                
-        success: function(response){                    
-            $("#siteloader").remove();    
-            $("#showsbyajax").html(response); 
-        }
+    $('#reload').click(function() {
+        $("#showsbyajax").toggle(); 
+        $("#siteloader").toggle();    
+        getShows();
+        
+       
     });
+    
+    function getShows(){
+        $.ajax({    //create an ajax request to load_page.php
+            type: "GET",
+            url: "ajaxload.php",             
+            dataType: "html",   //expect html to be returned                
+            success: function(response){                    
+                $("#siteloader").hide();    
+                $("#showsbyajax").html(response);
+                $("#showsbyajax").show();
+            }
+        });
+    }
+    
+    getShows();
+    
+    
   </script>
 </body>
 </html>
