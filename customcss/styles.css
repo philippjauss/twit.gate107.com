@@ -101,11 +101,13 @@ body {
 .left-small {
     width: 60px;
     height: 60px;
+    border-right-style: none;
 }
 
 .right-small {
     width: 60px;
     height: 60px;
+    border-left-style: none;
 }
 
 .tab-bar .menu-icon {
