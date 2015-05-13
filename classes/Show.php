@@ -15,7 +15,7 @@ spl_autoload_register(function ($class) {
  *
  * @author Philipp
  */
-class Show {
+class Show implements JsonSerializable{
     /**
      * Showname
      * 
@@ -82,7 +82,15 @@ class Show {
     public function setThumbnailNameAndPath($thumbnailNameAndPath) {
         $this->thumbnailNameAndPath = $thumbnailNameAndPath;
     }
-
     
-    //put your code here
+    public function jsonSerialize()
+    {
+        return [
+                'showname' => $this->showname,
+                'description' => $this->description,
+                'videourl' => $this->videourl,
+                'thumbnailNameAndPath' => $this->thumbnailNameAndPath
+        ];
+    }
+
 }

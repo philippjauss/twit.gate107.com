@@ -220,3 +220,5 @@ nbproject/project.xml
 tester.php
 /_dokumente/
 /showthumbs/*.jpg
+/nbproject/private/
+/api/vendor/

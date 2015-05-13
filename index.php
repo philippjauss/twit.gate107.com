@@ -92,6 +92,7 @@
     });
     $('#reload').click(function() {
         $("#showsbyajax").toggle(); 
+        $("#showsbyajax").empty();        
         $("#siteloader").toggle();    
         getShows();
         
@@ -99,14 +100,25 @@
     });
     
     function getShows(){
-        $.ajax({    //create an ajax request to load_page.php
+        $.ajax({    
             type: "GET",
-            url: "ajaxload.php",             
-            dataType: "html",   //expect html to be returned                
-            success: function(response){                    
-                $("#siteloader").hide();    
-                $("#showsbyajax").html(response);
-                $("#showsbyajax").show();
+            url: "api/shows",             
+            dataType: "json",                   
+            success: function(data){ 
+                // Data contains an array of show objects
+                $.each(data, function(arraykey, showobject) {
+                    $("#siteloader").hide(); 
+                    $('#showsbyajax').append(
+                            '<a href="video.php?videourl=' + showobject.videourl + '">' +
+                                '<div class="showtile">' +
+                                    '<img src="' + showobject.thumbnailNameAndPath + '"/>' +
+                                    '<div class="showtitletext">' +
+                                        '<h2>'+showobject.showname+'</h2> ' +
+                                    '</div>' +
+                                '</div>'
+                    );
+                    $("#showsbyajax").show();
+                });
             }
         });
     }
