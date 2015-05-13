@@ -147,13 +147,14 @@ class Twit {
             }
 
             $thumbnail=$this->outputpath.$imagefile;
-            if (file_exists($thumbnail)) {
+            $absoluteFile = $_SERVER['DOCUMENT_ROOT'].'/'.$thumbnail;
+            if (file_exists($absoluteFile)) {
                 // If the thumbnail already exists, we don't create a new one
             }else {
-                $cmd = "$ffmpeg -ss 00:02:30 -i $videourl  -vframes 1 -s 640x360 $thumbnail 2>&1";          
+                $cmd = "$ffmpeg -ss 00:02:30 -i $videourl  -vframes 1 -s 640x360 $absoluteFile 2>&1";          
                 error_log(exec($cmd));
                 // Optimize jpeg according to googles pagespeed insights
-                $cmd = "$jpegoptim $thumbnail --strip-all";
+                $cmd = "$jpegoptim $absoluteFile --strip-all";
                 error_log(exec($cmd));
                 
                 
