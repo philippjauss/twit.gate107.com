@@ -101,7 +101,7 @@ class Twit {
             
             $show->setShowname((string)$item->title);
             $show->setDescription((string)$item->children('http://www.itunes.com/dtds/podcast-1.0.dtd',false) -> summary[0]);
-            $show->setVideourl((string)$item->link);
+            $show->setVideourl((string)$item->guid);
             $show->setThumbnailNameAndPath($this->createThumbnail($show->getShowname(),$show->getVideourl()));
             $this->shows[]=$show;
             
