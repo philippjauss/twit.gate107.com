@@ -370,14 +370,3 @@ div.spinner div.bar12 {
     }
 
 }
-
-@media only screen and (min-width: 120.063em) { 
-    .main-video-section {
-        padding-left: 7.5%;
-    }        
-    .showtile {
-        border: solid;
-        border-color: brown;
-        width: 9%;
-    }
-} 
